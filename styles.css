@@ -1,0 +1,660 @@
+    body {
+        font-family: "Source Serif 4", serif;
+        background-color: #21486E;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /*header is everywhere, so I put it at the top of the css file. It is used in all pages, and it is important to have it at the top to avoid any issues with the layout.*/
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+        height: 130px;
+        margin: 0;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .logo {
+        max-width: 150px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+
+    .pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 54%;
+    }
+
+    /*menu is everywhere, so I put it at the top of the css file. It is used in all pages, and it is important to have it at the top to avoid any issues with the layout.*/
+    .menu-container {
+        background-color: #A4BFEB;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 20px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .menu-header {
+        font-size: 2em;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+
+    .menu-header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .menu-toggle span {
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+    }
+
+    .menu-items {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .menu-items.active {
+        display: block;
+    }
+
+
+    .menu-items a {
+        display: block;
+        background-color: #21486E;
+        color: white;
+        padding: 15px;
+        border-radius: 25px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 12px;
+    }
+
+    .menu-items a:hover {
+        text-decoration: underline;
+    }
+
+    /*footer is everywhere, so I put it at the top of the css file. It is used in all pages, and it is important to have it at the top to avoid any issues with the layout.*/
+    footer {
+        background-color: #A4BFEB;
+        color: black;
+        display: flex;
+        padding: 20px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        width: 90%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    /*button is used in both booking and contact page, so I put it at the top of the css file. It is used in both pages, and it is important to have it at the top to avoid any issues with the layout.*/
+    button {
+        background-color: #21486E;
+        color: white;
+        padding: 15px;
+        border-radius: 25px;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        font-size: 1.3em;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        font-style: italic;
+    }
+
+    button:hover {
+        text-decoration: underline;
+    }
+
+    /*welcome page*/
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .welcome {
+        background-color: #A4BFEB;
+        color: black;
+        display: flex;
+        padding: 20px;
+        margin: 0 auto;
+        flex-direction: column;
+        border-radius: 20px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .welcome h1 {
+        font-size: 32px;
+        font-style: italic bold;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+
+    .welcome p {
+        font-size: 28px;
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+
+    @media (min-width: 700px) {
+
+        .content-container {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .menu-container {
+            width: 30%;
+            margin-right: 5%;
+            height: auto;
+        }
+
+        .welcome {
+            width: 58%;
+            margin-left: 5%;
+            height: auto;
+        }
+
+        .welcome h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .welcome p {
+            font-size: 30px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .menu-header-row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu h2 {
+            text-align: center;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-top: 25px;
+            flex: 1;
+        }
+    }
+
+    /* Booking page */
+    .booking-form {
+        background-color: #A4BFEB;
+        color: black;
+        padding: 20px;
+        border-radius: 20px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .booking-form h2 {
+        font-size: 32px;
+        font-style: italic bold;
+        margin-left: 10px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .booking-form label {
+        display: block;
+        padding-bottom: 3px;
+        font-style: italic;
+    }
+
+    .booking-form p {
+        font-size: 1em;
+        font-style: italic;
+    }
+
+
+
+    @media (min-width: 700px) {
+
+        .book-container {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .booking-form {
+            width: 58%;
+            margin-left: 5%;
+            height: auto;
+            grid-template-columns: repeat(1fr);
+        }
+
+        .booking-form h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .booking-form p {
+            font-size: 1em;
+        }
+
+        .booking-form label {
+            font-size: 1em;
+        }
+
+        .submit-button {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width: 950px) {
+        .form-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            float: left;
+        }
+
+        .form-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            float: right;
+        }
+    }
+
+    @media (min-width: 1112px) {
+        .form-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            float: left;
+        }
+
+        .form-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            float: right;
+        }
+
+        .booking-form h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .booking-form p {
+            font-size: 1.2em;
+        }
+
+        .booking-form label {
+            font-size: 1.2em;
+        }
+    }
+
+    /*find us page*/
+    .find-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .find-info {
+        background-color: #A4BFEB;
+        color: black;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 20px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .map {
+        flex: 1;
+        border-radius: 20px;
+        margin-right: 5%;
+        overflow: hidden;
+        min-height: 200px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+    }
+
+    .find-info h2 {
+        font-size: 1.5em;
+        font-style: italic bold;
+        margin-left: 10px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .find-info p {
+        font-size: 1em;
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+    @media (min-width: 700px) {
+        .find-container {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+            padding: 20px;
+            align-items: stretch;
+        }
+
+        .find-info {
+            background-color: #A4BFEB;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            height: auto;
+            width: 58.5%;
+            margin-left: 4%;
+            display: flex;
+            flex-direction: column
+        }
+
+        .find-info h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .find-info p {
+            font-size: 1em;
+        }
+
+        .map {
+            flex: 1;
+            border-radius: 20px;
+            align-items: center;
+            overflow: hidden;
+            min-height: 200px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .find-info h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .find-info p {
+            font-size: 1em;
+        }
+    }
+
+    /* Contact page */
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-form {
+        background-color: #A4BFEB;
+        color: black;
+        padding: 20px;
+        border-radius: 20px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .contact-form h2 {
+        font-size: 32px;
+        font-style: italic bold;
+        margin-left: 10px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .contact-form label {
+        display: block;
+        padding-bottom: 3px;
+        font-style: italic;
+    }
+
+    textarea {
+        vertical-align: top;
+    }
+
+    @media (min-width: 700px) {
+        .contact-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .contact-form {
+            width: 58%;
+            margin-left: 5%;
+            height: auto;
+            grid-template-columns: repeat(1fr);
+        }
+
+        .contact-form h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .contact-form p {
+            font-size: 1em;
+        }
+
+        .contact-form label {
+            font-size: 1em;
+        }
+
+        .submit-button {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            float: left;
+        }
+
+        .contact-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            float: right;
+        }
+
+        .contact-form h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .contact-form p {
+            font-size: 1.2em;
+        }
+
+        .contact-form label {
+            font-size: 1.2em;
+        }
+    }
+
+    /*thanks for booking page*/
+    .thanksB-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .thanksB-container h2 {
+        font-size: 32px;
+        font-style: italic bold;
+        margin-left: 10px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .thanksB-info {
+        background-color: #A4BFEB;
+        color: black;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 20px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .thanksB-info p {
+        font-size: 1em;
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+    @media (min-width: 700px) {
+        .thanksB-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .thanksB-info {
+            background-color: #A4BFEB;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            height: auto;
+            width: 58.5%;
+            margin-left: 4%;
+            display: flex;
+            flex-direction: column
+        }
+
+        .thanksB-info h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .thanksB-info p {
+            font-size: 1em;
+        }
+    }
+
+    /* Thanks for contact page*/
+    .thanksC-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .thanksC-container h2 {
+        font-size: 32px;
+        font-style: italic bold;
+        margin-left: 10px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .thanksC-info {
+        background-color: #A4BFEB;
+        color: black;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 20px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .thanksC-info p {
+        font-size: 1em;
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+    @media (min-width: 700px) {
+        .thanksC-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .thanksC-info {
+            background-color: #A4BFEB;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            height: auto;
+            width: 58.5%;
+            margin-left: 4%;
+            display: flex;
+            flex-direction: column
+        }
+
+        .thanksC-info h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .thanksC-info p {
+            font-size: 1em;
+        }
+    }

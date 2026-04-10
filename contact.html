@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact The Might Hotel for inquiries, reservations, or any questions you may have. Our dedicated team is here to assist you with all your needs and ensure a memorable stay at our luxury hotel.">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>The might hotel | Contact us</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="hotell-logo.jpg" alt="hotel logo">
+        <img class="pic" src="hotell-bild.webp" alt="picture of hotel">
+    </header>
+    <main class="contact-container">
+        <div class="menu-container">
+            <div class="menu-header-row">
+                <div class="menu-header">Menu:</div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-items">
+                <a href="index.html">Home</a>
+                <a href="book.html">Book</a>
+                <a href="find.html">Find us</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <article class="contact-form">
+            <h2>Contact us!</h2>
+            <form action="thanksContact.html" method="get">
+                <div class="contact-left">
+                    <label>Name:
+                        <input type="text" name="name" required>
+                    </label>
+
+                    <label>Email:
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label>Message:
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+
+                </div>
+                <div class="contact-right">
+                    <p>Would you like a response?</p>
+                    <label>
+                        <input type="checkbox"> Yes
+                    </label>
+
+                    <label>
+                        <input type="checkbox"> No
+                    </label>
+
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>The Might Hotel | Main st. | 123 45 City | 012-34 56 78</p>
+    </footer>
+</body>
+
+</html>

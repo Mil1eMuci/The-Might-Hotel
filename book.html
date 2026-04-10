@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book your stay at The Might Hotel, a luxury accommodation in the heart of the city.">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>The might hotel | Book</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="hotell-logo.jpg" alt="hotel logo">
+        <img class="pic" src="hotell-bild.webp" alt="picture of hotel">
+    </header>
+    <main class="book-container">
+        <div class="menu-container">
+            <div class="menu-header-row">
+                <div class="menu-header">Menu:</div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-items">
+                <a href="index.html">Home</a>
+                <a href="book.html">Book</a>
+                <a href="find.html">Find us</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+
+        <article class="booking-form">
+            <h2 class="booking-title">Book your stay!</h2>
+            <form action="thanksBook.html" method="get">
+                <div class="form-left">
+                    <label>Full Name:
+                        <input type="text" name="name" required>
+                    </label>
+
+                    <label>Email Address:
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label> How many guests?<br>
+                        <select name="guests">
+                            <option value="1">One guest</option>
+                            <option value="2">Two guests</option>
+                            <option value="3">Three guests</option>
+                            <option value="4">Four guests</option>
+                            <option value="5">Five or more guests</option>
+                        </select>
+                    </label>
+
+                    <label>Check-in Date:
+                        <input type="date" id="checkin" name="checkin" required>
+                    </label>
+
+                    <label>Check-out Date:
+                        <input type="date" id="checkout" name="checkout" required>
+                    </label>
+                </div>
+                <div class="form-right">
+                    <p>What type of room would you like?</p>
+                    <label>
+                        <input type="checkbox"> Single Room
+                    </label>
+                    <label>
+                        <input type="checkbox"> Double Room
+                    </label>
+                    <label>
+                        <input type="checkbox"> Suite
+                    </label>
+
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>The Might Hotel | Main st. | 123 45 City | 012-34 56 78</p>
+    </footer>
+</body>
+
+</html>
