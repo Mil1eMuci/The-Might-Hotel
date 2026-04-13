@@ -183,7 +183,7 @@
         }
 
         .welcome h1 {
-            font-size: 36px;
+            font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
         }
@@ -203,7 +203,7 @@
             align-items: center;
         }
 
-        .menu h2 {
+        .menu h1 {
             text-align: center;
         }
 
@@ -233,8 +233,8 @@
         margin-bottom: 30px;
     }
 
-    .booking-form h2 {
-        font-size: 32px;
+    .booking-form h1 {
+        font-size: 2em;
         font-style: italic bold;
         margin-left: 10px;
         text-align: left;
@@ -269,8 +269,8 @@
             grid-template-columns: repeat(1fr);
         }
 
-        .booking-form h2 {
-            font-size: 36px;
+        .booking-form h1 {
+            font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
         }
@@ -319,7 +319,7 @@
             float: right;
         }
 
-        .booking-form h2 {
+        .booking-form h1 {
             font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
@@ -366,7 +366,7 @@
         display: block;
     }
 
-    .find-info h2 {
+    .find-info h1 {
         font-size: 1.5em;
         font-style: italic bold;
         margin-left: 10px;
@@ -401,7 +401,7 @@
             flex-direction: column
         }
 
-        .find-info h2 {
+        .find-info h1 {
             font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
@@ -426,7 +426,7 @@
             display: block;
         }
 
-        .find-info h2 {
+        .find-info h1 {
             font-size: 2em;
             margin-bottom: 10px;
             text-decoration: underline;
@@ -456,7 +456,7 @@
         margin-bottom: 30px;
     }
 
-    .contact-form h2 {
+    .contact-form h1 {
         font-size: 32px;
         font-style: italic bold;
         margin-left: 10px;
@@ -488,7 +488,7 @@
             grid-template-columns: repeat(1fr);
         }
 
-        .contact-form h2 {
+        .contact-form h1 {
             font-size: 36px;
             margin-bottom: 20px;
             text-decoration: underline;
@@ -522,7 +522,7 @@
             float: right;
         }
 
-        .contact-form h2 {
+        .contact-form h1 {
             font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
@@ -544,7 +544,7 @@
         width: 100%;
     }
 
-    .thanksB-container h2 {
+    .thanksB-container h1 {
         font-size: 32px;
         font-style: italic bold;
         margin-left: 10px;
@@ -587,7 +587,7 @@
             flex-direction: column
         }
 
-        .thanksB-info h2 {
+        .thanksB-info h1 {
             font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
@@ -605,7 +605,7 @@
         width: 100%;
     }
 
-    .thanksC-container h2 {
+    .thanksC-container h1 {
         font-size: 32px;
         font-style: italic bold;
         margin-left: 10px;
@@ -648,7 +648,7 @@
             flex-direction: column
         }
 
-        .thanksC-info h2 {
+        .thanksC-info h1 {
             font-size: 2em;
             margin-bottom: 20px;
             text-decoration: underline;
